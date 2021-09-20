@@ -1,0 +1,46 @@
+{
+	"workspace": "chalet-example-desktopapp",
+	"version": "1.0.0",
+	"abstracts:all": {
+		"language": "C++",
+		"settings:Cxx": {
+			"cppStandard": "c++17",
+			"warnings": "pedantic"
+		}
+	},
+	"targets": {
+		"chalet-example-desktopapp": {
+			"kind": "executable",
+			"location": "src",
+			"settings:Cxx": {
+				"pch": "src/pch.hpp",
+				"defines": [
+					"_UNICODE",
+					"UNICODE",
+					"WIN32",
+					"_WINDOWS"
+				],
+				"links": [
+					"gdi32"
+				],
+				"windowsSubSystem:!debug": "windows"
+			}
+		}
+	},
+	"distribution": {
+		"chalet-example-desktopapp": {
+			"subDirectory": "Release",
+			"configuration": "Release",
+			"projects": [
+				"chalet-example-desktopapp"
+			]
+		},
+		"chalet-example-desktopapp-d": {
+			"subDirectory": "Debug",
+			"configuration": "Debug",
+			"projects": [
+				"chalet-example-desktopapp"
+			]
+		}
+	}
+}

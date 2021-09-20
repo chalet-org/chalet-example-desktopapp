@@ -1,0 +1,9 @@
+# Chalet
+.chaletrc
+build
+chalet_external
+dist
+
+# Other
+Thumbs.db
+.DS_Store
