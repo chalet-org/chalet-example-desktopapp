@@ -1,7 +1,7 @@
 {
 	"workspace": "chalet-example-desktopapp",
 	"version": "1.0.0",
-	"abstracts:all": {
+	"abstracts:*": {
 		"language": "C++",
 		"settings:Cxx": {
 			"cppStandard": "c++17",
@@ -23,22 +23,24 @@
 				"links": [
 					"gdi32"
 				],
-				"windowsSubSystem:!debug": "windows"
+				"windowsSubSystem.!debug": "windows"
 			}
 		}
 	},
 	"distribution": {
 		"chalet-example-desktopapp": {
+			"kind": "bundle",
 			"subDirectory": "Release",
 			"configuration": "Release",
-			"projects": [
+			"buildTargets": [
 				"chalet-example-desktopapp"
 			]
 		},
 		"chalet-example-desktopapp-d": {
+			"kind": "bundle",
 			"subDirectory": "Debug",
 			"configuration": "Debug",
-			"projects": [
+			"buildTargets": [
 				"chalet-example-desktopapp"
 			]
 		}
