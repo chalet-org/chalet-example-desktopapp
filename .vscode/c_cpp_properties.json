@@ -1,68 +1,8 @@
 {
     "configurations": [
         {
-            "name": "Linux",
-            "intelliSenseMode": "linux-gcc-x64",
-            "compilerPath": "/usr/bin/g++",
-            "includePath": [
-				"${workspaceFolder}/src",
-                "/usr/local/include/",
-                "/usr/include/**"
-            ],
-            "defines": [
-                "__linux__",
-                "_DEBUG"
-            ],
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "forcedInclude": [
-                "${workspaceFolder}/src/main/PCH.hpp"
-            ]
-        },
-        {
-            "name": "Mac",
-            "intelliSenseMode": "macos-clang-x64",
-            "compilerPath": "/usr/bin/clang",
-            "macFrameworkPath": [
-                "/System/Library/Frameworks",
-                "/Library/Frameworks"
-            ],
-            "includePath": [
-				"${workspaceFolder}/src",
-                "/usr/local/include/"
-            ],
-            "defines": [
-                "__APPLE__",
-                "_DEBUG"
-            ],
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "forcedInclude": [
-                "${workspaceFolder}/src/main/PCH.hpp"
-            ]
-        },
-        {
             "name": "Win32",
             "intelliSenseMode": "windows-msvc-x64",
-            "includePath": [
-                "${workspaceFolder}/src"
-            ],
-            "defines": [
-                "_WIN32",
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "cStandard": "c11",
-            "cppStandard": "c++17",
-            "forcedInclude": [
-                "${workspaceFolder}/src/PCH.hpp"
-            ]
-        },
-        {
-            "name": "Win32 (MinGW)",
-            "intelliSenseMode": "windows-gcc-x64",
-            "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
             "includePath": [
                 "${workspaceFolder}/src"
             ],
