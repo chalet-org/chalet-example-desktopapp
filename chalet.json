@@ -11,7 +11,7 @@
 	"targets": {
 		"chalet-example-desktopapp": {
 			"kind": "executable",
-			"location": "src",
+			"files": "src/**.cpp",
 			"settings:Cxx": {
 				"pch": "src/pch.hpp",
 				"defines": [
@@ -30,7 +30,7 @@
 	"distribution": {
 		"chalet-example-desktopapp": {
 			"kind": "bundle",
-			"subDirectory": "Release",
+			"subdirectory": "Release",
 			"configuration": "Release",
 			"buildTargets": [
 				"chalet-example-desktopapp"
@@ -38,7 +38,7 @@
 		},
 		"chalet-example-desktopapp-d": {
 			"kind": "bundle",
-			"subDirectory": "Debug",
+			"subdirectory": "Debug",
 			"configuration": "Debug",
 			"buildTargets": [
 				"chalet-example-desktopapp"
