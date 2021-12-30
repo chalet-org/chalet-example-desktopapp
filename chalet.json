@@ -11,7 +11,6 @@
 	"targets": {
 		"chalet-example-desktopapp": {
 			"kind": "executable",
-			"files": "src/**.cpp",
 			"settings:Cxx": {
 				"pch": "src/pch.hpp",
 				"defines": [
@@ -20,11 +19,15 @@
 					"WIN32",
 					"_WINDOWS"
 				],
+				"includeDirs": [
+					"src"
+				],
 				"links": [
 					"gdi32"
 				],
 				"windowsSubSystem.!debug": "windows"
-			}
+			},
+			"files": "src/**.cpp"
 		}
 	},
 	"distribution": {
