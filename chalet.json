@@ -12,7 +12,7 @@
 		"chalet-example-desktopapp": {
 			"kind": "executable",
 			"settings:Cxx": {
-				"pch": "src/pch.hpp",
+				"precompiledHeader": "src/pch.hpp",
 				"defines": [
 					"_UNICODE",
 					"UNICODE",
