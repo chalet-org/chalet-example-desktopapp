@@ -23,10 +23,6 @@
 	#define WIN32_LEAN_AND_MEAN
 	#include <windows.h>
 	#include <winuser.h>
-
-	#if defined(APP_MSVC) && !defined(__clang__)
-		#pragma execution_character_set("utf-8")
-	#endif
 #endif
 
 #endif // APP_WINDOWS_API_HPP

@@ -1,5 +1,5 @@
 {
-	"workspace": "chalet-example-desktopapp",
+	"name": "chalet-example-desktopapp",
 	"version": "1.0.0",
 	"abstracts:*": {
 		"language": "C++",
