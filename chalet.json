@@ -25,7 +25,7 @@
 				"links": [
 					"gdi32"
 				],
-				"windowsSubSystem.!debug": "windows"
+				"windowsSubSystem[:!debug]": "windows"
 			},
 			"files": "src/**.cpp"
 		}
@@ -34,7 +34,6 @@
 		"chalet-example-desktopapp": {
 			"kind": "bundle",
 			"subdirectory": "Release",
-			"configuration": "Release",
 			"buildTargets": [
 				"chalet-example-desktopapp"
 			]
@@ -42,7 +41,6 @@
 		"chalet-example-desktopapp-d": {
 			"kind": "bundle",
 			"subdirectory": "Debug",
-			"configuration": "Debug",
 			"buildTargets": [
 				"chalet-example-desktopapp"
 			]
