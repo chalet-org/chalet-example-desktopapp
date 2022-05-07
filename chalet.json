@@ -5,7 +5,7 @@
 		"language": "C++",
 		"settings:Cxx": {
 			"cppStandard": "c++17",
-			"warnings": "pedantic"
+			"warningsPreset": "pedantic"
 		}
 	},
 	"targets": {
