@@ -5,7 +5,7 @@
 			"name": "MSVC",
 			"type": "cppvsdbg",
 			"request": "launch",
-			"program": "${workspaceFolder}/build/Debug/chalet-example-desktopapp.exe",
+			"program": "${workspaceFolder}/build/x64-pc-windows-msvc17_Debug/chalet-example-desktopapp.exe",
 			"args": [],
 			"stopAtEntry": false,
 			"cwd": "${workspaceFolder}",

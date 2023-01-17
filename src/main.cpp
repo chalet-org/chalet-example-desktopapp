@@ -3,6 +3,12 @@
 #ifdef APP_WIN32
 	#include "Libraries/WindowsApi.hpp"
 
+	#include <dwmapi.h>
+
+	#ifndef DWMWA_USE_IMMERSIVE_DARK_MODE
+		#define DWMWA_USE_IMMERSIVE_DARK_MODE 20
+	#endif
+
 	#include <stdlib.h>
 	#include <string.h>
 	#include <tchar.h>
@@ -97,6 +103,14 @@ int main(const int argc, const char* const argv[])
 			0);
 
 		return 1;
+	}
+
+	// Dark mode
+	// Note: in MinGW (GCC 12.2 at least), the titlebar is noticeably smaller in Windows 11 than if the app were compiled with MSVC
+	//
+	{
+		BOOL value = TRUE;
+		::DwmSetWindowAttribute(hWnd, DWMWA_USE_IMMERSIVE_DARK_MODE, &value, sizeof(value));
 	}
 
 	// The parameters to ShowWindow explained:

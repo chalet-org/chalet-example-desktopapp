@@ -13,7 +13,10 @@
 			"kind": "executable",
 			"settings:Cxx": {
 				"precompiledHeader": "src/pch.hpp",
-				"defines": [
+				"defines[:debug]": [
+					"_DEBUG"
+				],
+				"defines[:windows]": [
 					"_UNICODE",
 					"UNICODE",
 					"WIN32",
@@ -22,8 +25,9 @@
 				"includeDirs": [
 					"src"
 				],
-				"links": [
-					"gdi32"
+				"links[:windows]": [
+					"gdi32",
+					"dwmapi"
 				],
 				"windowsSubSystem[:!debug]": "windows"
 			},
