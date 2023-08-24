@@ -3,6 +3,7 @@
 build
 chalet_external
 dist
+env*
 
 # Other
 Thumbs.db
